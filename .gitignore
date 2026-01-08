@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Build artifacts (optional - you may want to commit the built CSS)
+# assets/admin-tailwind.css
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
