@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce Spam Filter
  * Plugin URI: https://github.com/marcuszeal/woo-spam-filter
  * Description: Blocks card-testing bot attacks on WooCommerce/PayPal checkout endpoints by verifying browser cookies.
- * Version: 1.2.0
+ * Version: 1.3.0
  * Author: Marcus Zeal
  * Author URI: https://marcuszeal.com
  * License: GPL v2 or later
@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'WSF_VERSION', '1.2.0' );
+define( 'WSF_VERSION', '1.3.0' );
 define( 'WSF_PLUGIN_FILE', __FILE__ );
 define( 'WSF_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WSF_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
