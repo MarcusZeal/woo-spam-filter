@@ -23,6 +23,23 @@ define( 'WSF_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WSF_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 /**
+ * Initialize plugin update checker.
+ * Checks GitHub releases for new versions.
+ */
+require_once WSF_PLUGIN_DIR . 'vendor/plugin-update-checker/plugin-update-checker.php';
+
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$wsf_update_checker = PucFactory::buildUpdateChecker(
+	'https://github.com/marcuszeal/woo-spam-filter',
+	__FILE__,
+	'woo-spam-filter'
+);
+
+// Use releases as the update source (recommended).
+$wsf_update_checker->getVcsApi()->enableReleaseAssets();
+
+/**
  * Main plugin class.
  */
 final class WooSpamFilter {
